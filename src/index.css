@@ -1,0 +1,179 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, Helvetica, Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #121212;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco,
+        Consolas, 'Courier New', monospace;
+}
+
+.App {
+    border-radius: 1em;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    margin: 0 auto 1rem 0;
+}
+
+.App-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6rem;
+
+    background: #fafafa;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.8rem #0095b6;
+
+    padding: 5rem;
+    max-width: 100%;
+    min-height: 60vh; /* colar o fundo da imagem no ecran*/
+    width: 56%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 2em;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: flex-start;
+    gap: 2rem;
+}
+
+.App-main-container,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #0095b6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1.7em;
+    font-weight: 700;
+    font-stretch: 50%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+h1::selection {
+    color: coral;
+    background: black;
+}
+h2::selection {
+    color: coral;
+    background: black;
+}
+h3::selection {
+    color: coral;
+    background: black;
+}
+h4::selection {
+    color: coral;
+    background: black;
+}
+h5::selection {
+    color: coral;
+    background: black;
+}
+
+p,
+span {
+    font-size: 1em;
+    color: #4c5254;
+    font-weight: 700;
+    font-stretch: 50%;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+p::selection {
+    color: coral;
+    background: black;
+}
+
+span::selection {
+    color: coral;
+    background: black;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .App {
+        margin: 0 !important;
+    }
+
+    .App-main-container {
+        width: 100% !important;
+        padding: 2rem !important;
+        border-radius: 0 !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    .form {
+        align-items: center !important;
+        text-align: center !important;
+        gap: 2rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 1.1em;
+        font-weight: 700;
+        font-stretch: 50%;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+    .list {
+        align-items: center;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .App-main-container {
+        width: 100%;
+        width: 100% !important;
+        padding: 2rem !important;
+        border-radius: 0 !important;
+        flex-direction: row;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+}
